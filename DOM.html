@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biodata Diri</title>
+  <style>
+    /* Add some basic styling to make the button look nicer */
+    #myButton {
+      background-color: #4CAF50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #myButton:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <h1>Biodata Diri </h1>
+  <button id="myButton">Tekan aku!</button>
+  <p id="result"></p>
+  <script type="text/javascript">
+    const button = document.getElementById("myButton");
+    const resultParagraph = document.getElementById("result");
+
+    button.addEventListener("click", function() {
+      alert("Nama: I Gede Satria Adinata/XI RPL 1/11!");
+
+      // Update the result paragraph with a message
+      resultParagraph.textContent = "Terima Kasih" + new Date().toLocaleTimeString();
+    });
+  </script>
+</body>
+</html>
